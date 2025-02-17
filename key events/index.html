@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin-top: 80px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    div {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .keyPress,
+    .keyCode,
+    .charCode,
+    .eventType {
+        color: #007bff;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Keyboard Events</h1>
+        <input type="text" id="myInput" placeholder="Type Something" />
+        <p class="keyPress">Key Pressed:</p>
+        <p class="keyCode">Key Code:</p>
+        <p class="charCode">Char Code:</p>
+        <p class="eventType">Event Type:</p>
+            
+    </div>
+
+    <script>
+        const handleKeyPress = (event) => {
+            console.log(event)
+            console.log("Key Pressed", event.key);
+            console.log("Key Code", event.code);
+            console.log("Event type", event.type);
+
+            document.querySelector(".keyPress").textContent = `Key Pressed: ${event.key}`;
+            document.querySelector(".keyCode").textContent = `Key Code: ${event.code}`;
+            document.querySelector(".charCode").textContent = `Char Code: ${event.keyCode}`;
+            document.querySelector(".eventType").textContent = `Event type: ${event.type}`;
+        }
+        const myinput = document.getElementById("myInput");
+        myInput.addEventListener("keydown", handleKeyPress);
+
+    </script>
+</body>
+
+</html> -->

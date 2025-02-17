@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+</head>
+
+<body>
+    <button id="set">Set Data</button>
+    <button id="get">Get Data</button>
+    <button id="remove">Remove Data</button>
+
+</body>
+<script>
+    const studentData = {
+        firstName: "Narendra",
+        lastName: "Lodhi"
+    }
+    const setButton = document.getElementById('set');
+    const getButton = document.getElementById('get');
+    const removeButton = document.getElementById('remove');
+
+    const addData = () => {
+        localStorage.setItem('studentData', JSON.stringify(studentData));
+    }
+    const getData = () => {
+        const retrive = JSON.parse(localStorage.getItem('studentData'));
+        console.log("Retrive Data", retrive)
+    }
+
+    const removeData = () => {
+        localStorage.removeItem('studentData');
+
+    }
+
+
+    document.getElementById("set").addEventListener('click', () => {
+        addData()
+    })
+
+    document.getElementById("get").addEventListener('click', () => {
+        getData()
+    })
+
+    document.getElementById("remove").addEventListener('click', () => {
+        removeData()
+    })
+
+
+
+
+    // const handelButton1 = () => {
+    //     localStorage.setItem("name", "narendra");
+    // }
+
+    // const handelButton2 = () => {
+    //     localStorage.getItem("name");
+    // }
+
+    // const handelButton3 = () => {
+    //     localStorage.removeItem("name");
+    // }
+    // setButton.addEventListener('click', handelButton1);
+    // getButton.addEventListener('click', handelButton2)
+    // removeButton.addEventListener('click', handelButton3)
+
+
+</script>
+
+</html>

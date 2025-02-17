@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+</head>
+
+<body>
+    <h1>Inline Event</h1>
+    <button on="alert('java script')">1 baar click</button>
+    <button ondblclick="alert('java script')">2 baar click</button>
+
+    <h1>Dom Event Handlar</h1>
+    <button id="demo">onclick</button>
+    <button id="demo1">ondbclick</button>
+
+    <h1>Add Event Handlar</h1>
+    <button id="demo2">onclick</button>
+    <button id="demo3">ondbclick</button>
+    <script>
+        document.getElementById('demo').onclick = () => {
+            alert("Java Script")
+        }
+
+        document.getElementById('demo1').ondblclick = () => {
+            alert("Java Script")
+        }
+
+
+        document.getElementById('demo2').addEventListener('click', () => {
+            alert("java script")
+        })
+
+        document.getElementById('demo2').addEventListener('click', () => {
+            alert("java script")
+        })
+    </script>
+    </E<>
+
+</html>
